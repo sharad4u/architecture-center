@@ -1,8 +1,13 @@
 ---
 title: "Cloud migration expanded scope checklist"
+titleSuffix: Microsoft Cloud Adoption Framework for Azure
 description: Cloud migration expanded scope checklist
 author: BrianBlanchard
+ms.author: brblanch
 ms.date: 04/04/2019
+ms.topic: guide
+ms.service: cloud-adoption-framework
+ms.subservice: migrate
 ---
 
 # Expanded scope for cloud migration
@@ -22,7 +27,7 @@ The following checklist outlines the common areas of complexity which could requ
 - **Culture-driven scope changes:**
   - Change management and approval processes *(Coming Q3 2019)*
   - Executive readiness *(Coming Q3 2019)*
-  - [Skills readiness](./skills-readiness.md)
+  - [Skills readiness](./suggested-skills.md)
   - Aligning support (Partner, services, and support) *(Coming Q3 2019)*
 - **Technical strategy-driven scope changes:**
   - Existing datacenter constraints *(Coming Q3 2019)*

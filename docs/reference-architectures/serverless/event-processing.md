@@ -12,7 +12,9 @@ ms.custom: seodec18, serverless
 
 # Serverless event processing using Azure Functions
 
-This reference architecture shows a [serverless](https://azure.microsoft.com/solutions/serverless/), event-driven architecture that ingests a stream of data, processes the data, and writes the results to a back-end database. A reference implementation for this architecture is available on [GitHub][github].
+This reference architecture shows a [serverless](https://azure.microsoft.com/solutions/serverless/), event-driven architecture that ingests a stream of data, processes the data, and writes the results to a back-end database.
+
+![GitHub logo](../../_images/github.png) A reference implementation for this architecture is available on [GitHub][github].
 
 ![Reference architecture for serverless event processing using Azure Functions](./_images/serverless-event-processing.png)
 
@@ -130,6 +132,10 @@ The deployment shown here resides in a single Azure region. For a more resilient
 
 To deploy this reference architecture, view the [GitHub readme][readme].
 
+## Next steps
+
+To learn more about the reference implementation, read [Show me the code: Serverless application with Azure Functions](../../serverless/index.md).
+
 <!-- links -->
 
 [cosmosdb]: /azure/cosmos-db/introduction
@@ -139,7 +145,7 @@ To deploy this reference architecture, view the [GitHub readme][readme].
 [eh]: /azure/event-hubs/
 [eh-autoscale]: /azure/event-hubs/event-hubs-auto-inflate
 [eh-dr]: /azure/event-hubs/event-hubs-geo-dr
-[eh-throughput]: /azure/event-hubs/event-hubs-features#throughput-units
+[eh-throughput]: /azure/event-hubs/event-hubs-scalability#throughput-units
 [eh-trigger]: /azure/azure-functions/functions-bindings-event-hubs
 [functions]: /azure/azure-functions/functions-overview
 [iot]: /azure/iot-hub/iot-hub-compare-event-hubs

@@ -1,12 +1,14 @@
 ---
 title: "Large enterprise: Initial corporate policy behind the governance strategy"
 titleSuffix: Microsoft Cloud Adoption Framework for Azure
-ms.service: architecture-center
-ms.subservice: enterprise-cloud-adoption
-ms.custom: governance
-ms.date: 02/11/2019
 description: Large enterprise – Initial corporate policy behind the governance strategy.
 author: BrianBlanchard
+ms.author: brblanch
+ms.date: 02/11/2019
+ms.topic: guide
+ms.service: cloud-adoption-framework
+ms.subservice: govern
+ms.custom: governance
 ---
 
 # Large enterprise: Initial corporate policy behind the governance strategy
@@ -28,10 +30,10 @@ After the meeting, two members of the IT Governance team requested permission to
 
 The current risk tolerance is high and the appetite for investing in cloud governance is low. As such, the tolerance indicators act as an early warning system to trigger the investment of time and energy. If the following indicators are observed, it would be wise to evolve the governance strategy.
 
-- Cost Management: Scale of deployment exceeds 1,000 assets to the cloud, or monthly spending exceeds $10,000 USD per month.
-- Identity Baseline: Inclusion of applications with legacy or third-party multi-factor authentication requirements.
-- Security Baseline: Inclusion of protected data in defined cloud adoption plans.
-- Resource Consistency: Inclusion of any mission-critical applications in defined cloud adoption plans.
+- **Cost Management:** Scale of deployment exceeds 1,000 assets to the cloud, or monthly spending exceeds $10,000 USD per month.
+- **Identity Baseline:** Inclusion of applications with legacy or third-party multi-factor authentication requirements.
+- **Security Baseline:** Inclusion of protected data in defined cloud adoption plans.
+- **Resource Consistency:** Inclusion of any mission-critical applications in defined cloud adoption plans.
 
 [!INCLUDE [policy-statements](../../../includes/governance/policy-statements.md)]
 

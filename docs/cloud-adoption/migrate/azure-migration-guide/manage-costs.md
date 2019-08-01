@@ -6,7 +6,8 @@ author: dchimes
 ms.author: kfollis
 ms.date: 04/09/2019
 ms.topic: conceptual
-ms.service: azure-portal
+ms.service: cloud-adoption-framework
+ms.subservice: migrate
 ms.custom: "fasttrack-edit"
 ---
 
@@ -36,8 +37,8 @@ Prior to migration of any asset (infrastructure, app, or data), there is an oppo
 
 For manual cost calculations, there are two handy calculators which can provide a quick cost estimate based on the architecture of the workload to be migrated.
 
-- The Azure [pricing calculator](https://azure.microsoft.com/pricing/calculator/) provides cost estimates based on manually entered Azure products.
-- Sometimes decisions require a comparison of the future cloud costs and the current on-premises costs. The [Total Cost of Ownership (TCO) calculator](https://azure.microsoft.com/pricing/tco/calculator/) can provide such a comparison.
+- The Azure [pricing calculator](https://azure.microsoft.com/pricing/calculator) provides cost estimates based on manually entered Azure products.
+- Sometimes decisions require a comparison of the future cloud costs and the current on-premises costs. The [Total Cost of Ownership (TCO) calculator](https://azure.microsoft.com/pricing/tco/calculator) can provide such a comparison.
 
 These manual cost calculators can be used on their own to forecast potential spend and savings. They can also be used in conjunction with Azure Migrate's cost forecasting tools to adjust the cost expectations to fit alternative architectures or performance constraints.
 
@@ -66,7 +67,7 @@ _Figure 1. Image of the Cost Details view of an assessment in Azure Migrate_
 
 ## Additional resources
 
-- [Creating and viewing assessments with Azure Migrate](/azure/migrate/tutorial-assessment-vmware#create-and-view-an-assessment)
+- [Set up and review an assessment with Azure Migrate](/azure/migrate/tutorial-assess-vmware#set-up-an-assessment)
 - For a more comprehensive plan on cost management across larger numbers of assets (infrastructure, apps, and data), see the [Cloud Adoption Framework governance model](../../governance/journeys/index.md). In particular, guidance on the [Cost Management discipline](../../governance/cost-management/index.md) and the [Cost Management evolution in the large enterprise guide](../../governance/journeys/large-enterprise/cost-management-evolution.md).
 
 # [Estimate and optimize VM costs during and after migration](#tab/EstimateOptimize)
@@ -130,7 +131,7 @@ Speak with your Microsoft account representative to understand how you can take 
 
 ## Use Azure Hybrid Benefit
 
-If you already have Windows Server or SQL Server licenses in your on-premises deployments, you can use the [Azure Hybrid Benefit](https://azure.microsoft.com/en-us/pricing/hybrid-benefit/) program to save in Azure. With the Windows Server benefit, each license covers the cost of the OS (up to two virtual machines), and you only pay for base compute costs. You can use existing SQL Server licenses to save up to 55 percent on vCore-based SQL Database options. Options include SQL Server in Azure Virtual Machines and SQL Server Integration Services.
+If you already have Windows Server or SQL Server licenses in your on-premises deployments, you can use the [Azure Hybrid Benefit](https://azure.microsoft.com/pricing/hybrid-benefit) program to save in Azure. With the Windows Server benefit, each license covers the cost of the OS (up to two virtual machines), and you only pay for base compute costs. You can use existing SQL Server licenses to save up to 55 percent on vCore-based SQL Database options. Options include SQL Server in Azure Virtual Machines and SQL Server Integration Services.
 
 ## Low-priority VMs with Batch
 

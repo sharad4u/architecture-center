@@ -12,7 +12,7 @@ ms.custom: sharad4u
 
 # Decision tree for load balancing in Azure
 
-Azure offers a number of ways to host your application code. The term *compute* refers to the hosting model for the computing resources that your application runs on. The following flowchart will help you to choose a compute service for your application. The flowchart guides you through a set of key decision criteria to reach a recommendation.
+Azure provides you with a variety of different load balancing solutions that you can leverage to distribute traffic between your different application endpoints. This distribution of traffic could be across your virtual machines, containers, Kubernetes clusters, App Services, in-region within a virtual network or across different Azure regions. The following flowchart will help you to choose a load balancing solution for your application. The flowchart guides you through a set of key decision criteria to reach a recommendation.
 
 **Treat this flowchart as a starting point.** Every application has unique requirements, so use the recommendation as a starting point. Then perform a more detailed evaluation, looking at aspects such as:
 
@@ -23,20 +23,21 @@ Azure offers a number of ways to host your application code. The term *compute* 
 - [Regional availability](https://azure.microsoft.com/global-infrastructure/services/)
 - IT/DevOps ecosystem and team skills
 
-If your application consists of multiple workloads, evaluate each workload separately. A complete solution may incorporate two or more compute services.
-
-For more information about your options for hosting containers in Azure, see [Azure Containers](https://azure.microsoft.com/overview/containers/).
+If your application consists of multiple workloads, evaluate each workload separately. A complete solution may incorporate two or more load balancing solutions.
 
 ## Flowchart
 
-![Decision tree for Azure compute services](../images/load-balancing-decision-tree.png)
+![Decision tree for load balancing in Azure](../images/load-balancing-decision-tree.svg)
 
 ## Definitions
 
-- **"Lift and shift"** is a strategy for migrating a workload to the cloud without redesigning the application or making code changes. Also called *rehosting*. For more information, see [Azure migration center](https://azure.microsoft.com/migration/).
+- **"Internet facing"** applications are the ones that are publicly accessible from the internet. This is an application architecture choice that is common for consumer as well as business applications. As a best practice, application owners apply restrictive access policies or protect the application by setting up offerings like web application firewall and DDoS protection. 
 
-- **Cloud optimized** is a strategy for migrating to the cloud by refactoring an application to take advantage of cloud-native features and capabilities.
+- **PaaS** Platform as a service (PaaS) is a complete development and deployment environment in the cloud, with resources that enable you to deliver everything from simple cloud-based apps to sophisticated, cloud-enabled enterprise applications. PaaS is designed to support the complete web application lifecycle: building, testing, deploying, managing, and updating. PaaS allows you to avoid the expense and complexity of buying and managing software licenses, the underlying application infrastructure and middleware or the development tools and other resources. You manage the applications and services you develop, and the cloud service provider typically manages everything else.
+
+- **IaaS** Infrastructure as a service (IaaS) is an instant computing infrastructure, provisioned and managed over the internet. IaaS quickly scales up and down with demand, letting you pay only for what you use. It helps you avoid the expense and complexity of buying and managing your own physical servers and other datacenter infrastructure. Azure, manages the infrastructure, while you purchase, install, configure, and manage your own software—operating systems, middleware, and applications.
+
 
 ## Next steps
 
-For additional criteria to consider, see [Criteria for choosing an Azure compute service](./compute-comparison.md).
+For additional context on these different load balancing services, see [Overview of load balancing options in Azure](./load-balancing-overview.md).

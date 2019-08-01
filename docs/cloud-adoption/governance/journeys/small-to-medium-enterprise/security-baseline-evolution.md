@@ -1,12 +1,14 @@
 ---
 title: "Small-to-medium enterprise: Security Baseline evolution"
 titleSuffix: Microsoft Cloud Adoption Framework for Azure
-ms.service: architecture-center
-ms.subservice: enterprise-cloud-adoption
-ms.custom: governance
-ms.date: 02/11/2019
 description: "Small-to-medium enterprise: Security Baseline evolution"
 author: BrianBlanchard
+ms.author: brblanch
+ms.date: 02/11/2019
+ms.topic: guide
+ms.service: cloud-adoption-framework
+ms.subservice: govern
+ms.custom: governance
 ---
 
 # Small-to-medium enterprise: Security Baseline evolution
@@ -120,7 +122,7 @@ The governance MVP design will evolve to include new Azure policies and an imple
 
 Adding the above processes and changes to the governance MVP will help to remediate many of the risks associated with security governance. Together, they add the network, identity, and security monitoring tools needed to protect data.
 
-## Next Steps
+## Next steps
 
 As cloud adoption continues to evolve and deliver additional business value, risks and cloud governance needs also evolve. For the fictional company in this journey, the next step is to support mission-critical workloads. This is the point when Resource Consistency controls are needed.
 

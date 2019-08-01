@@ -1,12 +1,14 @@
 ---
 title: "Software Defined Networking decision guide"
 titleSuffix: Microsoft Cloud Adoption Framework for Azure
-ms.service: architecture-center
-ms.subservice: enterprise-cloud-adoption
-ms.custom: governance
-ms.date: 02/11/2019
 description: Learn about Software Defined Networks as a core service in Azure migrations.
 author: rotycenh
+ms.author: v-tyhopk
+ms.date: 02/11/2019
+ms.topic: guide
+ms.service: cloud-adoption-framework
+ms.subservice: decision-guide
+ms.custom: governance
 ---
 
 # Software Defined Networking decision guide
@@ -17,7 +19,7 @@ Software Defined Networking (SDN) is a network architecture designed to allow vi
 
 ![Plotting networking options from least to most complex, aligned with jump links below](../../_images/discovery-guides/discovery-guide-sdn.png)
 
-Jump to: [PaaS Only](paas-only.md) | [Cloud-native](cloud-native.md) | | [Cloud DMZ](cloud-dmz.md) [Hybrid](hybrid.md) | [Hub and spoke model](hub-spoke.md) | [Learn more](#learn-more)
+Jump to: [PaaS Only](paas-only.md) | [Cloud-native](cloud-native.md) | [Cloud DMZ](cloud-dmz.md) [Hybrid](hybrid.md) | [Hub and spoke model](hub-spoke.md) | [Learn more](#learn-more)
 
 SDN provides several options with varying degrees of pricing and complexity. The above discovery guide provides a reference to quickly personalize these options to best align with specific business and technology strategies.
 

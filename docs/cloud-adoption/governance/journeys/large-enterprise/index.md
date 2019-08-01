@@ -1,12 +1,14 @@
 ---
 title: "Large enterprise governance journey"
 titleSuffix: Microsoft Cloud Adoption Framework for Azure
-ms.service: architecture-center
-ms.subservice: enterprise-cloud-adoption
-ms.custom: governance
-ms.date: 02/11/2019
 description: Large enterprise governance journey
 author: BrianBlanchard
+ms.author: brblanch
+ms.date: 02/11/2019
+ms.topic: guide
+ms.service: cloud-adoption-framework
+ms.subservice: govern
+ms.custom: governance
 ---
 
 # Large enterprise governance journey
@@ -35,13 +37,13 @@ Every application should be deployed in the proper area of the management group,
 1. A management group for each business unit with a detailed hierarchy that reflects geography then environment type (for example, Production or Nonproduction).
 2. A subscription for each unique combination of business unit, geography, environment, and "Application Categorization."
 3. A separate resource group for each application.
-4. [Consistent nomenclature](../../../ready/considerations/naming-and-tagging.md) should be applied at each level of this grouping hierarchy.
+4. [Consistent nomenclature](../../../ready/considerations/name-and-tag.md) should be applied at each level of this grouping hierarchy.
 
 ![Large enterprise resource organization diagram](../../../_images/governance/large-enterprise-resource-organization.png)
 
 These patterns provide room for growth without complicating the hierarchy unnecessarily.
 
-[!INCLUDE [governance-of-resources](../../../includes/governance/governance-of-resources.md)]
+[!INCLUDE [governance-of-resources](../../../../../includes/caf-governance-of-resources.md)]
 
 ## Governance evolutions
 

@@ -3,7 +3,11 @@ title: "Understand partnership and support options"
 titleSuffix: Microsoft Cloud Adoption Framework for Azure
 description: Describes options and approaches to support migration efforts
 author: BrianBlanchard
+ms.author: brblanch
 ms.date: 04/04/2019
+ms.topic: guide
+ms.service: cloud-adoption-framework
+ms.subservice: migrate
 ---
 
 # Understand partnership options
@@ -79,7 +83,7 @@ The main phases of a typical FastTrack for Azure engagement are:
 
 ## Azure Support
 
-If you have questions or need help, [create a support request](https://portal.azure.com/#blade/Microsoft_Azure_Support/HelpAndSupportBlade/newsupportrequest). If your support request requires deep technical guidance, visit [Azure Support Plans](https://azure.microsoft.com/support/plans/) to align the best plan for your needs.
+If you have questions or need help, [create a support request](https://portal.azure.com/#blade/Microsoft_Azure_Support/HelpAndSupportBlade/newsupportrequest). If your support request requires deep technical guidance, visit [Azure Support Plans](https://azure.microsoft.com/support/plans) to align the best plan for your needs.
 
 ## Azure Solutions Partner
 

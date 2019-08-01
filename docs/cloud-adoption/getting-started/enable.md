@@ -3,15 +3,15 @@ title: "Enable customer success across any cloud adoption journey"
 titleSuffix: Microsoft Cloud Adoption Framework for Azure
 description: Enable customer success across any cloud adoption journey
 author: BrianBlanchard
+ms.author: brblanch
 ms.date: 04/04/2019
-layout: LandingPage
 ms.topic: landing-page
+ms.service: cloud-adoption-framework
+ms.subservice: overview
+layout: LandingPage
 ---
 
 # Enable success across any cloud adoption journey
-
-> [!NOTE]
-> The "Enable" name on this page is a placeholder to help show alignment with FY20 priorities during development and staging only. It will be changed prior to public preview release. Names being considered: additional tools, additional resources, foundations. Further testing on this page name is required.
 
 The Microsoft Cloud Adoption Framework for Azure is provided as a free self-service tool to guide readers through various cloud adoption efforts. The focus of this content is to help customers succeed at realizing business goals that can be enabled by Azure. However, this content also respects that the reader may be addressing business, culture, or technical challenges that can be broad in nature and may at times require a cloud-neutral position. As such, each section of this guidance starts with an Azure first approach, but follows with cloud neutral theory that can scale across business and technical decisions.
 
@@ -19,9 +19,10 @@ Throughout this framework, enablement is a core theme. The following checklist c
 
 - **Plan:** Establishing clear [business outcomes](../business-strategy/business-outcomes/index.md), a defined [digital estate plan](../digital-estate/index.md), and well understood [adoption backlogs](../migrate/migration-considerations/prerequisites/migration-backlog-review.md).
 - **Ready:** Ensure the readiness of staff through [skills and learning plans](../ready/technical-skills.md).
-- **Adopt:** Ensure proper implementation of desired changes, across IT and business processes, to achieve business outcomes.
+- **Operate:** Define a manageable operating model to guide activities during and long after adoption.
+  - **[Organize](../organization/index.md):** Align people and teams to deliver proper cloud operations and adoption.
   - **Govern:** Align proper [governance disciplines](../governance/index.md) to consistently apply cost management, risk mitigation, compliance, and security baselines across all cloud adoption.
-  - **Operate:** Ongoing [operations](../operations/index.md) of the IT portfolio to minimize interruptions to business processes and ensure stability of the IT portfolio.
+  - **Manage:** Ongoing [operations](../operations/index.md) of the IT portfolio to minimize interruptions to business processes and ensure stability of the IT portfolio.
   - **Support:** Align proper [partnership and support options](../migrate/migration-considerations/assess/partnership-options.md).
 
 ## Additional tools

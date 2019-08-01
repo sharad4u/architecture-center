@@ -1,12 +1,14 @@
 ---
 title: "Cloud Operating Model is now the Microsoft Cloud Adoption Framework for Azure"
-ms.service: architecture-center
-ms.subservice: enterprise-cloud-adoption
+description: Learn about using Cloud Operating Model practices within the Cloud Adoption Framework.
+author: BrianBlanchard
+ms.author: brblanch
+ms.date: 04/04/2019
+ms.topic: landing-page
+ms.service: cloud-adoption-framework
+ms.subservice: reference
 ms.custom: governance
 layout: LandingPage
-ms.topic: landing-page
-author: BrianBlanchard
-ms.date: 04/04/2019
 ---
 
 # Cloud Operating Model is now part of the Microsoft Cloud Adoption Framework for Azure
@@ -38,7 +40,7 @@ COM established a scope comprised of the following components:
 The high-level scopes of the Cloud Operating Model and the Cloud Adoption Framework are similar. Business, culture, and technology are reflected throughout the guidance and each methodology within the Cloud Adoption Framework.
 
 > [!NOTE]
-> There are two significant points of clarity with the Cloud Adoption Framework's scope. In the Cloud Adoption Framework, business strategy goes beyond the documentation of cloud costs; it is about understanding motivations, desired outcomes, returns, and cloud costs to create actionable plans and clear business justifications. In the Cloud Adoption Framework, people strategy goes beyond training to include approaches that create demonstrable cultural maturity. A few areas on the roadmap include demonstrations of the impact of Agile management, DevOps integration, customer empathy and obsession, and lean product development approaches.
+> The Cloud Adoption Framework's scope has two significant points of clarity. In the Cloud Adoption Framework, business strategy goes beyond the documentation of cloud costs&mdash;it is about understanding motivations, desired outcomes, returns, and cloud costs to create actionable plans and clear business justifications. In the Cloud Adoption Framework, people strategy goes beyond training to include approaches that create demonstrable cultural maturity. A few areas on the roadmap include demonstrations of the impact of Agile management, DevOps integration, customer empathy and obsession, and lean product development approaches.
 
 ## Structure
 

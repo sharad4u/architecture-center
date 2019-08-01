@@ -1,14 +1,15 @@
 ---
 title: "Actionable governance journeys"
 titleSuffix: Microsoft Cloud Adoption Framework for Azure
-ms.service: architecture-center
-ms.subservice: enterprise-cloud-adoption
-ms.custom: governance
-ms.date: 02/11/2019
 description: Actionable governance journeys
 author: BrianBlanchard
-layout: LandingPage
+ms.author: brblanch
+ms.date: 02/11/2019
 ms.topic: landing-page
+ms.service: cloud-adoption-framework
+ms.subservice: govern
+ms.custom: governance
+layout: LandingPage
 ---
 
 # Actionable governance journeys
@@ -113,7 +114,7 @@ To begin a governance journey, choose one of the two options below. The options 
 
 ### Business characteristics
 
-|                                            | Small-to-medium enterprise                                                                              | Large enterprise                                                                                               |
+| Characteristic | Small-to-medium enterprise                                                                              | Large enterprise                                                                                               |
 |--------------------------------------------|---------------------------------------------------------------------------------------------------------|----------------------------------------------------------------------------------------------------------------|
 | Geography (country or geopolitical region) | Customers or staff reside largely in one geography                                                      | Customers or staff reside in multiple geographies                                                              |
 | Business units affected                    | Single business unit                                                                                    | Multiple business units                                                                                        |
@@ -122,7 +123,7 @@ To begin a governance journey, choose one of the two options below. The options 
 
 ### Current state before adopting cloud governance
 
-|                                             | Small-to-medium enterprise                                                                               | Large enterprise                                                                                                          |
+| State | Small-to-medium enterprise                                                                               | Large enterprise                                                                                                          |
 |---------------------------------------------|----------------------------------------------------------------------------------------------------------|---------------------------------------------------------------------------------------------------------------------------|
 | Datacenter or third-party hosting providers | Fewer than five datacenters                                                                                  | More than five datacenters                                                                                                   |
 | Networking                                  | No WAN, or 1 &ndash; 2 WAN providers                                                                             | Complex network or global WAN                                                                                             |
@@ -130,7 +131,7 @@ To begin a governance journey, choose one of the two options below. The options 
 
 ### Desired future state after evolving cloud governance
 
-|                                              | Small-to-medium enterprise                                                                        | Large enterprise                                                                                        |
+| State | Small-to-medium enterprise                                                                        | Large enterprise                                                                                        |
 |----------------------------------------------|---------------------------------------------------------------------------------------------------|---------------------------------------------------------------------------------------------------------|
 | Cost Management – cloud accounting           | Showback model. Billing is centralized through IT.                                                | Chargeback model. Billing could be distributed through IT procurement.                                  |
 | Security Baseline – protected data           | Company financial data and IP. Limited customer data. No third-party compliance requirements.     | Multiple collections of customers’ financial and personal data. May need to consider third-party compliance. |
@@ -153,12 +154,11 @@ A virtual datacenter can be thought of as your own isolated cloud within the Azu
 Although smaller teams may benefit from the models and recommendations the Azure Virtual Datacenter provides, this approach is designed to guide enterprise IT groups managing large cloud environments. For organizations that meet the following criteria it's recommended that you consider consulting the Azure Virtual Datacenter guidance when designing your Azure-based cloud infrastructure:
 
 - Your enterprise is subject to regulatory compliance requirements that require centralized monitoring and audit capabilities.
-- Your cloud estate will consist of over 10,000 IaaS VMs or an equivalent scale of PaaS services.
-- You need to enable agile deployment capabilities for workloads in support of developer and operations teams, while maintaining common policy and governance compliance and central IT control over core services.
-- Your industry depends on a complex platform that requires deep domain expertise (for example, finance, oil and gas, or manufacturing).
+- You need to maintain common policy and governance compliance and central IT control over core services.
+- Your industry depends on a complex platform which requires complex controls and deep domain expertise to govern the platform. This is most common in large enterprises within finance, oil and gas, or manufacturing.
 - Your existing IT governance policies require tighter parity with existing features, even during early stage adoption.
 
-For more information, visit the [Azure Virtual Datacenter](/azure/architecture/vdc) section of the Cloud Adoption Framework site.
+For more information, visit the [Azure Virtual Datacenter](/azure/architecture/vdc) section of the Cloud Adoption Framework.
 
 ## Next steps
 

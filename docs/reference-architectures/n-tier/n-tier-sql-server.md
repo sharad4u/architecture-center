@@ -182,10 +182,10 @@ A deployment for this reference architecture is available on [GitHub][github-fol
 
 4. Open the `n-tier-windows.json` file.
 
-5. Search for all instances of "witnessStorageBlobEndPoint" and replace the placeholder text with the name of the Storage account from step 2.
+5. Search for all instances of "witnessStorageAccount" and replace the placeholder text with the name of the Storage account from step 2.
 
     ```json
-    "witnessStorageBlobEndPoint": "https://[replace-with-storageaccountname].blob.core.windows.net",
+    "witnessStorageAccount": "[replace-with-storageaccountname]",
     ```
 
 6. Run the following command to list the account keys for the storage account.
@@ -267,11 +267,11 @@ For more information on deploying this sample reference architecture using Azure
 [resource-manager-overview]: /azure/azure-resource-manager/resource-group-overview
 [vmss]: /azure/virtual-machine-scale-sets/virtual-machine-scale-sets-overview
 [load-balancer]: /azure/load-balancer/
-[load-balancer-hashing]: /azure/load-balancer/load-balancer-overview#load-balancer-features
+[load-balancer-hashing]: /azure/load-balancer/load-balancer-overview#fundamental-load-balancer-features
 [vmss-design]: /azure/virtual-machine-scale-sets/virtual-machine-scale-sets-design-overview
 [subscription-limits]: /azure/azure-subscription-service-limits
 [availability-set]: /azure/virtual-machines/virtual-machines-windows-manage-availability
-[health-probes]: /azure/load-balancer/load-balancer-overview#load-balancer-features
+[health-probes]: /azure/load-balancer/load-balancer-overview#fundamental-load-balancer-features
 [health-probe-log]: /azure/load-balancer/load-balancer-monitor-log
-[health-probe-ip]: /azure/virtual-network/virtual-networks-nsg#special-rules
+[health-probe-ip]: /azure/virtual-network/security-overview#augmented-security-rules
 [network-security]: /azure/best-practices-network-security

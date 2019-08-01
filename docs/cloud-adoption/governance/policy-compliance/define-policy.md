@@ -1,8 +1,13 @@
 ---
 title: "Define corporate policy statements for cloud governance"
+titleSuffix: Microsoft Cloud Adoption Framework for Azure
 description: How do you establish policy to reflect and remediate risks?
 author: BrianBlanchard
+ms.author: brblanch
 ms.date: 01/02/2019
+ms.topic: guide
+ms.service: cloud-adoption-framework
+ms.subservice: govern
 ---
 
 # Define corporate policy for cloud governance
@@ -23,7 +28,7 @@ The image above illustrates the relationship between business risk, policy and c
 
 Cloud governance is the product of an ongoing adoption effort over time, as a true lasting transformation doesn't happen overnight. Attempting to deliver complete cloud governance before addressing key corporate policy changes using a fast aggressive method seldom produces the desired results. Instead we recommend an incremental approach.
 
-What is different about a cloud adoption framework is the purchasing cycle and it can enable authentic transformation. Since there is not a large capital expenditure acquisition requirement, engineers can begin experimentation and adoption sooner. In most corporate cultures, elimination of the capital expense barrier to adoption can lead to tighter feedback loops, organic growth, and incremental execution.
+What is different about a Cloud Adoption Framework is the purchasing cycle and it can enable authentic transformation. Since there is not a large capital expenditure acquisition requirement, engineers can begin experimentation and adoption sooner. In most corporate cultures, elimination of the capital expense barrier to adoption can lead to tighter feedback loops, organic growth, and incremental execution.
 
 The shift to cloud adoption requires a shift in governance. In many organizations, corporate policy transformation allows for improved governance and higher rates of adherence through incremental policy changes and automated enforcement of those changes, powered by newly defined capabilities that you configure with your cloud service provider.
 

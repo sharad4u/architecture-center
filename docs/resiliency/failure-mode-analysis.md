@@ -69,7 +69,7 @@ Application_End logging will catch the app domain shutdown (soft process crash) 
 
 ### A bad update was deployed.
 
-**Detection**. Monitor the application health through the Azure Portal (see [Monitor Azure web app performance][app-insights-web-apps]) or implement the [health endpoint monitoring pattern][health-endpoint-monitoring-pattern].
+**Detection**. Monitor the application health through the Azure portal (see [Monitor Azure web app performance][app-insights-web-apps]) or implement the [health endpoint monitoring pattern][health-endpoint-monitoring-pattern].
 
 **Recovery:**. Use multiple [deployment slots][app-service-slots] and roll back to the last-known-good deployment. For more information, see [Basic web application][ra-web-apps-basic].
 
@@ -124,7 +124,7 @@ The default retry policy uses exponential back-off. To use a different retry pol
 
 **Recovery:**
 
-- Each [Cassandra client](https://wiki.apache.org/cassandra/ClientOptions) has its own retry policies and capabilities. For more information, see [Cassandra error handling done right][cassandra-error-handling].
+- Each [Cassandra client](https://cwiki.apache.org/confluence/display/CASSANDRA2/ClientOptions) has its own retry policies and capabilities. For more information, see [Cassandra error handling done right][cassandra-error-handling].
 - Use a rack-aware deployment, with data nodes distributed across the fault domains.
 - Deploy to multiple regions with local quorum consistency. If a non-transient failure occurs, fail over to another region.
 
@@ -512,7 +512,7 @@ For more information about the FMA process, see [Resilience by design for cloud 
 [health-endpoint-monitoring-pattern]: https://msdn.microsoft.com/library/dn589789.aspx
 [onstop-events]: https://azure.microsoft.com/blog/the-right-way-to-handle-azure-onstop-events/
 [lb-monitor]: /azure/load-balancer/load-balancer-monitor-log/
-[lb-probe]: /azure/load-balancer/load-balancer-custom-probe-overview/#learn-about-the-types-of-probes
+[lb-probe]: /azure/load-balancer/load-balancer-custom-probe-overview#types
 [new-relic]: https://newrelic.com/
 [priority-queue-pattern]: https://msdn.microsoft.com/library/dn589794.aspx
 [queue-based-load-leveling]: https://msdn.microsoft.com/library/dn589783.aspx
@@ -530,7 +530,7 @@ For more information about the FMA process, see [Resilience by design for cloud 
 [sb-messaging-exceptions]: /azure/service-bus-messaging/service-bus-messaging-exceptions/
 [sb-outages]: /azure/service-bus-messaging/service-bus-outages-disasters/#protecting-queues-and-topics-against-datacenter-outages-or-disasters
 [sb-partition]: /azure/service-bus-messaging/service-bus-partitioning/
-[sb-poison-message]: /azure/app-service-web/websites-dotnet-webjobs-sdk-storage-queues-how-to/#poison
+[sb-poison-message]: /azure/app-service/webjobs-sdk-how-to#automatic-triggers
 [sb-retry]: ../best-practices/retry-service-specific.md#service-bus
 [search-sdk]: https://msdn.microsoft.com/library/dn951165.aspx
 [scheduler-agent-supervisor]: https://msdn.microsoft.com/library/dn589780.aspx
@@ -542,8 +542,8 @@ For more information about the FMA process, see [Resilience by design for cloud 
 [sql-db-replication]: /azure/sql-database/sql-database-geo-replication-overview/
 [storage-metrics]: https://msdn.microsoft.com/library/dn782843.aspx
 [storage-replication]: /azure/storage/storage-redundancy/
-[Storage.RetryPolicies]: https://msdn.microsoft.com/library/microsoft.windowsazure.storage.retrypolicies.aspx
+[Storage.RetryPolicies]: /dotnet/api/microsoft.azure.storage.retrypolicies
 [sys.event_log]: https://msdn.microsoft.com/library/dn270018.aspx
 [throttling-pattern]: https://msdn.microsoft.com/library/dn589798.aspx
 [web-jobs]: /azure/app-service-web/web-sites-create-web-jobs/
-[web-jobs-shutdown]: /azure/app-service-web/websites-dotnet-webjobs-sdk-storage-queues-how-to/#graceful
+[web-jobs-shutdown]: /azure/app-service/webjobs-sdk-how-to#cancellation-tokens

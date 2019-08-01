@@ -6,7 +6,8 @@ author: matticusau
 ms.author: mlavery
 ms.date: 04/04/2019
 ms.topic: conceptual
-ms.service: azure-portal
+ms.service: cloud-adoption-framework
+ms.subservice: migrate
 ms.custom: fasttrack-new
 ---
 
@@ -39,9 +40,7 @@ To get started with Azure Migrate follow these steps:
 
 ::: zone target="chromeless"
 
-::: form action="OpenBlade[#blade/Microsoft_Azure_ManagementGroups/HierarchyBlade]" submitText="Go to Azure Migration" :::
-
-::: form action="OpenBlade[#create/Microsoft.AzureMigrate]" submitText="Create new Migration Project" :::
+::: form action="Create[#create/Microsoft.AzureMigrate]" submitText="Create new migration project" :::
 
 ::: zone-end
 
@@ -67,10 +66,10 @@ Azure Migrate and Azure Migrate v2 (currently in preview) use Service Map to enh
 
 ### Enable dependency visualization using Service Map
 
-To use [dependency visualization](/azure/migrate/concepts-dependency-visualization), you need to download and install agents on each on-premises machine that you want to analyze.
+To use dependency visualization, you need to download and install agents on each on-premises machine that you want to analyze.
 
-- [Microsoft Monitoring agent(MMA)](/azure/log-analytics/log-analytics-agent-windows) needs to be installed on each machine.
-- The [Dependency agent](/azure/monitoring/monitoring-service-map-configure) needs to be installed on each machine.
+- [Microsoft Monitoring agent (MMA)](/azure/log-analytics/log-analytics-agent-windows) needs to be installed on each machine.
+- The [dependency agent](/azure/monitoring/monitoring-service-map-configure#dependency-agent-downloads) needs to be installed on each machine.
 - In addition, if you have machines with no internet connectivity, you need to download and install Log Analytics gateway on them.
 
 <!-- markdownlint-disable MD024 -->
@@ -80,7 +79,6 @@ To use [dependency visualization](/azure/migrate/concepts-dependency-visualizati
 - [Using Service Map solution in Azure](/azure/azure-monitor/insights/service-map)
 - [Azure Migrate and Service Map: Dependency visualization](/azure/migrate/concepts-dependency-visualization)
 
-::: zone-end
 
 # [Scenarios and Stakeholders](#tab/Scenarios)
 

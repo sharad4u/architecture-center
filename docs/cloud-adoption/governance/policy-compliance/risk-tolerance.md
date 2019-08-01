@@ -1,8 +1,13 @@
 ---
 title: "Evaluate risk tolerance"
+titleSuffix: Microsoft Cloud Adoption Framework for Azure
 description: Explanation of the business risks associated with a cloud transformation
 author: BrianBlanchard
+ms.author: brblanch
 ms.date: 04/04/2019
+ms.topic: guide
+ms.service: cloud-adoption-framework
+ms.subservice: govern
 ---
 
 # Evaluate risk tolerance
@@ -82,12 +87,12 @@ These questions over simplify the technical solutions needed to manage or remove
 
 After answering these questions along with questions as determined by the Cloud Governance team, groupings of probability will likely emerge. The following are a few grouping samples to help get started:
 
-- No indication: Not enough research has been completed to determine probability.
-- Low risk: Current research indicates realizing the risk is unlikely.
-- Future risk: The current probability is low. However, continued adoption would require a fresh analysis.
-- Medium risk: It's likely that the risk will affect the business.
-- High risk: Over time, it is increasingly likely that the business will realize this risk.
-- Declining risk: The risk is medium to high. However, actions in IT or the business are reducing the likelihood of an impact.
+- **No indication:** Not enough research has been completed to determine probability.
+- **Low risk:** Current research indicates realizing the risk is unlikely.
+- **Future risk:** The current probability is low. However, continued adoption would require a fresh analysis.
+- **Medium risk:** It's likely that the risk will affect the business.
+- **High risk:** Over time, it is increasingly likely that the business will realize this risk.
+- **Declining risk:** The risk is medium to high. However, actions in IT or the business are reducing the likelihood of an impact.
 
 **Determining tolerance:**
 
