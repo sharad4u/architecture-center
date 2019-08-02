@@ -16,15 +16,23 @@ The term *load balancing* refers to the distribution of workloads across multipl
 
 ## Overview
 
-Azure provides multiple global and regional services for managing how your network traffic is distributed and load balanced: **Traffic Manager**, **Azure Front Door**, **Application Gateway**, and **Azure Load Balancer**. Along with Azure’s many regions and zonal architecture, using these services together enable you to build robust, scalable high-performance applications.
+Azure provides multiple global and regional services for managing how your application's traffic is distributed and load balanced: **Traffic Manager**, **Azure Front Door**, **Application Gateway**, and **Azure Load Balancer**. Along with Azure’s many regions and zonal architecture, using these services together enable you to build robust, scalable high-performance applications.
+
+![Load balancing choices in Azure](../images/load-balancing-choices.png)
 
 These services are broken into two categories:
 
-- **Global load balancing services** such as Traffic Manager and Front Door distribute traffic from your end users across your regional backends, across clouds or even your hybrid on-premises services. Global load balancing routes your traffic to your closest service backend and reacts to changes in service reliability or performance to maintain always-on, maximal performance for your users.
+- **Global load balancing services** such as Traffic Manager and Front Door distribute traffic from your end users across your regional backends, across clouds or even your hybrid on-premises services. Global load balancing routes your traffic to your closest service backend and reacts to changes in service reliability or performance to maintain always-on, maximal performance for your users. You can think of global load balancing services as things that load balance between your application stamps or endpoints or scale-units hosted across different regions/geographies. 
 
-- **Regional load balancing services** such as Standard Load Balancer or Application Gateway provide the ability to distribute traffic within virtual networks (VNETs) across your virtual machines (VMs) or zonal service endpoints within a region.
+- **Regional load balancing services** such as Standard Load Balancer or Application Gateway provide the ability to distribute traffic within virtual networks (VNETs) across your virtual machines (VMs) or zonal service endpoints within a region. You can think of regional load balancers as systems that load balance between your virtual machines or containers or clusters within a region in a virtual network.  
 
-Combining global and regional services in your application provides an end-to-end reliable, performant, and secure way to route traffic to and from your users to your IaaS, PaaS, or on-premises services. In the next section, we describe each of these service
+Correspondingly, there is another way of pivoting these different load balancers based on the application workload type that they can handle:
+
+- **HTTP/HTTPS load balancing services** such as Front Door and Application Gateway are layer 7 load balancers, that is, can only cater to HTTP/HTTPS traffic. This basically allows these services to offer layer 7 benefits like SSL offload, web application firewall, path-based load balancing, session affinity and so on.
+
+- **Non-HTTP/S load balancing services** such as Traffic Manager and Load Balancer which do not work at layer 7. Traffic Manager is a DNS based load balancing service and so is limited to load balancing only at domain level. Also, being at the DNS level, it cannot perform as fast fail-over as Front Door because of common challenges around DNS caching and systems not honoring DNS TTLs. Load Balancer operates for TCP and UDP traffic and offers in-region load balancing with low latency and high throughput for TCP/UDP workloads. 
+
+Combining global and regional services in your application provides an end-to-end reliable, performant, and secure way to route traffic to and from your users to your IaaS, PaaS, or on-premises services. In the next section, we describe each of these service in a nutshell to understand the key differences.
 
 ## Load balancing services in Azure
 
@@ -35,14 +43,13 @@ Here are the main load balancing services currently available in Azure:
 - [Azure Load Balancer](https://docs.microsoft.com/azure/load-balancer/load-balancer-overview) is an integral part of the Azure SDN stack, providing high-performance, low-latency Layer 4 load-balancing services for all UDP and TCP protocols.
 - [Traffic Manager](https://docs.microsoft.com/azure/traffic-manager/traffic-manager-overview) is a DNS-based traffic load balancer that enables you to distribute traffic optimally to services across global Azure regions, while providing high availability and responsiveness.
 
-
 When selecting the load balancing options, here are some factors to consider:
 
-- Traffic type: Is it a web (HTTP/HTTPS) application? Is it public facing or a private application?
-- Global vs. regional: Are you looking at load balancing your VMs or containers within a VNET, or your scale unit/deployments across regions, or both?
-- Scalability. How does the service handle adding or removing instances? Can it autoscale based on load and other metrics?
-- Availability. What is the service SLA?
-- Cost. In addition to the cost of the service itself, consider the operations cost for managing a solution built on that service. For example, IaaS solutions might have a higher operations cost.
+- **Traffic type**: Is it a web (HTTP/HTTPS) application? Is it public facing or a private application?
+- **Global vs. regional**: Are you looking at load balancing your VMs or containers within a VNET, or your scale unit/deployments across regions, or both?
+- **Scalability**: How does the service handle adding or removing instances? Can it auto-scale based on load and other metrics?
+- **Availability** What is the service SLA?
+- **Cost** In addition to the cost of the service itself, consider the operations cost for managing a solution built on that service. For example, IaaS solutions might have a higher operations cost.
 - What are the overall limitations of each service?
 - What kind of application architectures are appropriate for this service?
 
